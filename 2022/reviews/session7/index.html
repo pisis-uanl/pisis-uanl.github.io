@@ -73,15 +73,14 @@
     <div class="row">
       <!---------------------------------------------------------- PONENTE ----------------------------------------->
       <div class="col-md-3" id ="semblanza">
-         <h4 class="my-3">Dr. Mario Alberto Diaz Torres</h4>
+         <h4 class="my-3">Lic. Arturo Elías Llumber</h4>
         <!--<h5>diana.huerta.lm@gmail.com</h5>-->
          <p>
-            El doctor Mario Alberto Diaz Torres cuenta con una maestría en probabilidad y estadística por el Centro de Investigación en Matemáticas (CIMAT) en México.  Además, obtuvo su grado de doctor en matemáticas y estadística por la Queen's University en Canadá, y un doctorado por la Arizona State University en conjunto con la Universidad de Harvard donde trabajó en la teoría matemática y estadística de la privacidad de datos. También cuenta con un posdoctorado en el CIMAT donde trabajó en la teoría matemática y estadística de la privacidad de datos y matrices aleatorias. Actualmente es investigador asociado en el Instituto de investigaciones en matemáticas aplicadas y en sistema de la UNAM. Sus intereses de investigación son privacidad de datos, teoría de la información y aprendizaje máquina teórico.
+            El licenciado Arturo Elías Llumber es bioquímico y biólogo, obtuvo su grado en la Universidad de la Habana, Cuba e inició sus estudios de Doctorado en 2019 en la Universidad de Chile. Actualmente, se desempeña como investigador en el centro médico universitario xxxxx como parte del programa de doctorado conjunto en ciencias biomédicas entre la universidad de Chile y la universidad de Groningen en Países Bajos.
          </p>
          
-         <a href="https://scholar.google.com/citations?user=Ym_prgUAAAAJ&hl=en"><i class="fa fa-google fa-2x">&nbsp;</i></a>
-         <a href="https://www.mariodiaztorres.com"><i class="fa fa-globe fa-2x">&nbsp;</i></a>
-
+         <a href="https://www.linkedin.com/in/arturo-el%C3%ADas-llumbet-a864571a5/?trk=public_profile_browsemap_profile-result-card_result-card_full-click&originalSubdomain=nl"><i class="fa fa-linkedin fa-2x" >&nbsp;</i></a>
+         
         <!--
            <a href=""><i class="fa fa-google fa-2x">&nbsp;</i></a>
            <a href=""><i class="fa fa-twitter-square fa-2x"></i></a>
@@ -100,21 +99,21 @@
         <!-- TITULO -->
         <h1 class="mt-4 mb-3">
           <div style="text-align: center;">
-            <span id="titulo">Privacidad desde una perspectiva de Teoría de la Información            </span>
+            <span id="titulo">Hacia una mejor evaluación del estrés oxidativo durante la metástasis</span>
           </div>
         </h1>
         <!--FIN TITULO-->
         
         <!-- ETIQUETAS -->
         <p style="font-size: 10px;">
-          <i class="fa fa-clock-o"></i>&nbsp; 04/marzo/2022 <i class="fa fa-user"></i>&nbsp;Seminario PISIS-UANL 2022 &nbsp; &nbsp; <i class="fa fa-users"></i> 
+          <i class="fa fa-clock-o"></i>&nbsp; 11/marzo/2022 <i class="fa fa-user"></i>&nbsp;Seminario PISIS-UANL 2022 &nbsp; &nbsp; <i class="fa fa-users"></i> 
           &nbsp;Asistencia :<strong> * </strong>
         </p>
         <!-- ETIQUETAS -->
 
         <!-- VIDEO -->
         <div class="embed-responsive embed-responsive-16by9">
-         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gPZWeHXwmys" title="Privacidad desde una perspectiva de Teoría de la Información" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5__J0puohDA" title="Hacia una mejor evaluación del estrés oxidativo durante la metástasis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
          
         </div>
         <!--FIN VIDEO -->
@@ -122,34 +121,42 @@
         <!-- CONTENIDO -->
         <h3 class="my-3">Introducción</h3>
         <p>
-         Se tiene una muestra de los datos del censo de Estados Unidos de 1994, y se quiere diseñar un clasificador que tomará algunos atributos de personas como edad, educación, ocupación y género; para predecir la  categoría de ingresos (mencionada como income bracket)  menor de 50,000 mil dólares al año y más de 50,000 mil al año. Este es un problema central en machine learning y en esta charla, se presenta una metodología para abordar el problema.
+         En un principio se nos introduce a ciertos conceptos biológicos que son necesarios para poder entender el objeto de estudio, la metástasis, el estrés oxidativo, Nanodiamantes fluorescentes.
+         <br>
+         En esta presentación el doctor nos muestra el proceso con el cual estudian a las células del cáncer en su metástasis por medio de nanodiamantes fluorescentes para poder dar a entender la necesidad que se tiene la optimización de este proceso.
         </p>
         <h3 class="my-3">Resumen</h3>
         <p>
-         Antes de empezar las charla se nos comparten algunos conceptos necesarios para entender la metodología: la exactitud del clasificador, que es una medida empírica de la exactitud de predecir si el sujeto cae en el ingreso esperado. La auditación del modelo es un proceso que revela sesgo contra algún grupo y puede ser detectado por inspección visual, experimento contrafactual e inspección de coeficientes (revisar los coeficientes de la regresión lineal para cada variable e identificar aquel que muestra una desproporción con los demás coeficientes). Clasificación de equidad es una manera rápida de lidiar con un problema de equidad y consiste en eliminar el coeficiente que muestra un sesgo. Costo de equidad es la modificación a la equidad la cual tiene típicamente un costo a la exactitud del modelo de predicción.
+         Se nos presentan ciertos conceptos biológicos que son necesarios para poder entender el objeto de estudio, siendo el primero de estos la metástasis, el cual es la diseminación de células cancerígenas desde su lugar de origen hacia otras partes del organismo.
          <br>
-         Como práctica estándar, antes de iniciar el proceso de aprendizaje es necesario preprocesar los datos obtenidos para su mejor tratamiento en la metodología. El atributo de edad el cual está registrado en el rango 17 a 90, normalizamos y aplicamos una transformación de tal manera que tenemos ahora un rango de 0 a 1. El atributo educación tiene 16 posibles valores yendo desde preescolar hasta doctorado denotado como x15 donde x es un número comprendido entre el rango (0,...,15). El atributo ocupación es un vector de 14 diferentes ocupaciones, cada uno tratado como un atributo binario, por ejemplo (1,0,0,...,0) o (0,1,...,0,0) o (0,0,...,0,1). El atributo género es una variable binaria en el que se asigna 1 si el individuo es mujer y 0 si es hombre.
+         El segundo es el estrés oxidativo, que es el desbalance de moléculas llamadas especies reactivas del oxígeno (ROS) con antioxidantes, en el caso de que alguno de estos tenga un exceso, provocaría muerte de las células, el estrés oxidativo es el mayor obstáculo de las células que están en proceso de metástasis.
          <br>
-         La función de clasificación h la obtenemos por un ajuste de mínimos cuadrados, Se define la función h la cual mapea de un vector de 16 posibles respuestas a un conjunto {1,0} donde 1 es la predicción de que un individuo tenga un ingreso de mas de 50 mil dólares y 0 de otra manera. 
+         El tercero es los nanodiamantes fluorescentes, los cuales son compuestos que tienen defectos en su estructura de carbono, especialmente los centros NV, en los cuales la molécula de carbono a sido sustituido por uno de nitrógeno y se encuentra adyacente a un vacío, esto además de las nubes electrónicas que lo rodean les permiten ser sensibles a las concentraciones de radicales libres en sus alrededores.
+         <br>
+         Esta sensibilidad puede ser medida a través de una intensidad luminiscente, el cual es la liberación de fotones entre dos poblaciones de electrones alrededor de la molécula.
+         <br>
+         A continuación, se evaluó los nano diamantes en células cancerígenas MDA-MB-231, el cual es una línea de cáncer de mama muy agresiva, se evaluaron diferentes parámetros morfológicos, como el volumen celular, superficie celular y las adiciones focales los cuales son las transformaciones que sufren las células para adaptarse a un nuevo ambiente en la metástasis.
+         <br>
+         Después se hace una imagenología focal en el cual se utilizan platillos donde se pone un inserto de silicona que tiene dos espacios separados por una barrera, estas son incubadas y a uno de estos se le cambia la solución en la que no tenga nutrientes, esto estimula a la célula cancerígena a migrar en busca de los nutrientes, es en este momento cuando se puede hacer una imagen 3D de la célula que permita verla en varias capas.
+         <br>
+         El problema, sin embargo, es que el paso de la segmentación el cual es diferenciar una célula de otra en las imágenes producidas es manual, por lo tanto, se comunica la necesidad de generar un software que automatice la segmentación celular.
         </p>
         <h3 class="my-3">Conclusiones</h3>
         <p>
-         En esta plática se logró dar a conocer uno de los problemas centrales en machine learning, el cual consiste en cómo poder medir y destruir una base de datos por relación entre diferentes variables. Las aplicaciones mencionadas de este trabajo van relacionadas directamente al mundo financiero y legal, en donde tenemos como ejemplos los modelos matemáticos que deciden aprobar o rechazar un crédito bancario. Otro ejemplo que se menciona es que puede ser usado para calcular qué tan probable es que un ex-convicto reincida por un crimen, siendo un dato importante en estos modelos las métricas que se utilizan para la exactitud de los modelos.
-         <br>
-         Algunos inconvenientes que surgieron dentro de esta investigación fueron encontrar sesgo para ciertos grupos de la base de datos, los cuales se resolvieron mediante auditaciones del modelo. Finalmente se estableció que no es suficiente eliminar solo una variable, ya que algunas variables del atributo están muy correlacionadas,por lo tanto se puede utilizar un atributo parcialmente, en el que solo se puede perder un porcentaje de exactitud para estar en los estándares requeridos.
+         En esta presentación se logró comunicar la necesidad que se tiene de formar software que optimicen el proceso de segmentación celular para así poder evaluar con profundidad el mecanismo con el que la célula se adapta para resistir el cambio de ambiente en la metástasis, con el cual se pueden desarrollar terapias específicas para su tratamiento.
         </p>
         <!--FIN CONTENIDO -->
 
         <!------------------------------------------ ENLACES -------------------------------------------->
         
-         
+         <!--
         <h3 class="my-3">Enlaces relevantes</h3>
         <ul>
          <li><a href="https://colab.research.google.com/drive/1YIkDnZGUbUrlAsfBW2oUsIXS-EbD8CW8?usp=sharing">E-Notebook de la charla.</a></li> 
          <li><a href="https://blog.tensorflow.org/2019/03/introducing-tensorflow-privacy-learning.html"> Librería TensorFlow Privacy.</a></li> 
          <li><a href="https://www.wiley.com/en-us/Elements+of+Information+Theory%2C+2nd+Edition-p-9780471241959"> Libro clásico sobre teoría de la información.</a></li> 
         </ul>
-        
+        -->
         <!-------------------------------------------- FIN ENLACES -------------------------------------->
       </div>
 
@@ -987,19 +994,19 @@
                   </div>
                   </div>
                </div>
-               <!--
+            
                <div class="col-md-4">
                   <div class="card mb-2">
-                  <img class="card-img-top" src="../../../images/r3_2022.jpg"
+                  <img class="card-img-top" src="../../../images/r6_2022.jpg"
                      alt="Card image cap">
                   <div class="card-body">
-                     <h4 class="card-title">Modelos de imputación equivalentes para el manejo de datos faltantes en bases de datos</h4>
-                     <p class="card-text">En esta sesión el Dr. Guillermo Santamaria Bonfil comentará sobre técnicas y modelos de imputación equivalentes para el manejo de datos faltantes en bases de datos. Además, presentará el uso de técnicas de aprendizaje automático en la imputación de valores faltantes de concentración en yacimientos geotérmicos.</p>
-                     <a class="btn btn-primary"  href="../../../2022/reviews/session3/index.html">Leer</a>
+                     <h4 class="card-title">Privacidad desde una perspectiva de Teoría de la Información                     </h4>
+                     <p class="card-text">En esta sesión el Dr. Mario Alberto Díaz Torres comentará sobre la privacidad  en la era digital moderna y la importancia de prestar gran atención a este aspecto, con el fin de evitar un uso inapropiado de la información.  </p>
+                     <a class="btn btn-primary"  href="../../../2022/reviews/session6/index.html">Leer</a>
                   </div>
                   </div>
                </div>
-               -->
+               
             </div>
             </div>
             <!--19-->

@@ -73,14 +73,15 @@
     <div class="row">
       <!---------------------------------------------------------- PONENTE ----------------------------------------->
       <div class="col-md-3" id ="semblanza">
-         <h4 class="my-3">Dr. Mario Alberto Diaz Torres</h4>
+         <h4 class="my-3">MSc. Jesus Ortiz Bejar</h4>
         <!--<h5>diana.huerta.lm@gmail.com</h5>-->
          <p>
-            El doctor Mario Alberto Diaz Torres cuenta con una maestría en probabilidad y estadística por el Centro de Investigación en Matemáticas (CIMAT) en México.  Además, obtuvo su grado de doctor en matemáticas y estadística por la Queen's University en Canadá, y un doctorado por la Arizona State University en conjunto con la Universidad de Harvard donde trabajó en la teoría matemática y estadística de la privacidad de datos. También cuenta con un posdoctorado en el CIMAT donde trabajó en la teoría matemática y estadística de la privacidad de datos y matrices aleatorias. Actualmente es investigador asociado en el Instituto de investigaciones en matemáticas aplicadas y en sistema de la UNAM. Sus intereses de investigación son privacidad de datos, teoría de la información y aprendizaje máquina teórico.
+            El MSc. Jesus Ortiz Bejar obtuvo el grado de licenciatura en ciencias físico matemáticas en la Universidad Michoacana de San Nicolás de Hidalgo, así como una maestría en matemáticas e informática por el centro de investigaciones matemáticas. Ha trabajado en la industria como desarrollador de Python y como científico de datos. Actualmente es técnico académico en la Universidad Michoacana de San Nicolas de Hidalgo y Data Engineer en E1 Technology.
          </p>
          
-         <a href="https://scholar.google.com/citations?user=Ym_prgUAAAAJ&hl=en"><i class="fa fa-google fa-2x">&nbsp;</i></a>
-         <a href="https://www.mariodiaztorres.com"><i class="fa fa-globe fa-2x">&nbsp;</i></a>
+         <a href="https://mx.linkedin.com/in/jes%C3%BAs-ortiz-466106104 "><i class="fa fa-linkedin fa-2x" >&nbsp;</i></a>
+         <a href="https://ieeexplore.ieee.org/author/37086310796 "><i class="fa fa-google fa-2x">&nbsp;</i></a>
+         
 
         <!--
            <a href=""><i class="fa fa-google fa-2x">&nbsp;</i></a>
@@ -100,21 +101,22 @@
         <!-- TITULO -->
         <h1 class="mt-4 mb-3">
           <div style="text-align: center;">
-            <span id="titulo">Privacidad desde una perspectiva de Teoría de la Información            </span>
+            <span id="titulo">Aplicaciones de PLN en la generación de rutas de aprendizaje basado en aprendizajes esperados            </span>
           </div>
         </h1>
         <!--FIN TITULO-->
         
         <!-- ETIQUETAS -->
         <p style="font-size: 10px;">
-          <i class="fa fa-clock-o"></i>&nbsp; 04/marzo/2022 <i class="fa fa-user"></i>&nbsp;Seminario PISIS-UANL 2022 &nbsp; &nbsp; <i class="fa fa-users"></i> 
+          <i class="fa fa-clock-o"></i>&nbsp; 18/marzo/2022 <i class="fa fa-user"></i>&nbsp;Seminario PISIS-UANL 2022 &nbsp; &nbsp; <i class="fa fa-users"></i> 
           &nbsp;Asistencia :<strong> * </strong>
         </p>
         <!-- ETIQUETAS -->
 
         <!-- VIDEO -->
+
         <div class="embed-responsive embed-responsive-16by9">
-         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gPZWeHXwmys" title="Privacidad desde una perspectiva de Teoría de la Información" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pQVw1vkYkjE" title="Aplicaciones de PLN en la generación de rutas de aprendizaje basado en aprendizajes esperados" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
          
         </div>
         <!--FIN VIDEO -->
@@ -122,21 +124,22 @@
         <!-- CONTENIDO -->
         <h3 class="my-3">Introducción</h3>
         <p>
-         Se tiene una muestra de los datos del censo de Estados Unidos de 1994, y se quiere diseñar un clasificador que tomará algunos atributos de personas como edad, educación, ocupación y género; para predecir la  categoría de ingresos (mencionada como income bracket)  menor de 50,000 mil dólares al año y más de 50,000 mil al año. Este es un problema central en machine learning y en esta charla, se presenta una metodología para abordar el problema.
+         El procesamiento de lenguaje natural (PLN) constituye un área de inteligencia artificial, el cual investiga la manera de comunicar a las máquinas con las personas mediante el uso de lenguajes naturales, como lo son el español, inglés, chino, entre otros. En esta plática se describe el concepto de PLN como herramienta educativa, en el cual se pretende utilizar una aplicación llamada Bidirectional Encoder Representations from Transformer (BERT), en la cual se desarrolló un sistema para el etiquetado de un conjunto de aprendizajes esperados relacionados con un conjunto de actividades y contenidos de enseñanza a través de etiquetas que construyen rutas de aprendizaje.
         </p>
         <h3 class="my-3">Resumen</h3>
         <p>
-         Antes de empezar las charla se nos comparten algunos conceptos necesarios para entender la metodología: la exactitud del clasificador, que es una medida empírica de la exactitud de predecir si el sujeto cae en el ingreso esperado. La auditación del modelo es un proceso que revela sesgo contra algún grupo y puede ser detectado por inspección visual, experimento contrafactual e inspección de coeficientes (revisar los coeficientes de la regresión lineal para cada variable e identificar aquel que muestra una desproporción con los demás coeficientes). Clasificación de equidad es una manera rápida de lidiar con un problema de equidad y consiste en eliminar el coeficiente que muestra un sesgo. Costo de equidad es la modificación a la equidad la cual tiene típicamente un costo a la exactitud del modelo de predicción.
-         <br>
-         Como práctica estándar, antes de iniciar el proceso de aprendizaje es necesario preprocesar los datos obtenidos para su mejor tratamiento en la metodología. El atributo de edad el cual está registrado en el rango 17 a 90, normalizamos y aplicamos una transformación de tal manera que tenemos ahora un rango de 0 a 1. El atributo educación tiene 16 posibles valores yendo desde preescolar hasta doctorado denotado como x15 donde x es un número comprendido entre el rango (0,...,15). El atributo ocupación es un vector de 14 diferentes ocupaciones, cada uno tratado como un atributo binario, por ejemplo (1,0,0,...,0) o (0,1,...,0,0) o (0,0,...,0,1). El atributo género es una variable binaria en el que se asigna 1 si el individuo es mujer y 0 si es hombre.
-         <br>
-         La función de clasificación h la obtenemos por un ajuste de mínimos cuadrados, Se define la función h la cual mapea de un vector de 16 posibles respuestas a un conjunto {1,0} donde 1 es la predicción de que un individuo tenga un ingreso de mas de 50 mil dólares y 0 de otra manera. 
+         El objetivo de esta investigación es ayudar a generar rutas de aprendizaje, siguiendo los lineamientos de la secretaría de educación (SEP). Inicialmente se presenta esta investigación como una herramienta de apoyo para generar líneas de aprendizaje para alumnos de estudios iniciales, sin embargo, este ejercicio de etiquetado y categorización que se muestra en la presentación puede traducirse a muchas otras áreas de interés en el área de aprendizaje de máquina para el lenguaje natural. 
+         <br><br>
+         Durante la etapa de trabajo del ponente en la empresa Notion, en el que trabajó en la construcción de rutas de aprendizaje, menciona que se contaba con un conjunto de actividades para enseñar contenidos de primaria y secundaria, donde dicha empresa constituye un ecosistema de enseñanza de inglés y matemáticas, el cual sigue lineamientos que propone la SEP en su metodología de enseñanza, la cual se basa en aprendizajes esperados. Esto significa que se busca identificar cuál es el nivel de aprendizaje que se desea que cada estudiante posea para afirmar que el mismo ha adquirido los conocimientos necesarios para aprobar ese nivel. 
+         <br><br>
+         Dentro del uso de la herramienta los principales hallazgos pueden notarse en los resultados del BERT, donde marcan las características que se creen necesarias para generar los conocimientos esenciales en los alumnos. Con esta herramienta también se puede observar cómo cada una de las actividades se encuentran relacionadas y cuáles son los conjuntos que se necesitan para poder completar esta competencia teóricamente. 
+         <br><br>
+         Se menciona que realizaron varias encuestas y valoraciones en alumnos de primaria para poder generar los datos, y también el ponente hace énfasis en que se puede mejorar la forma de recolección para ayudar a los maestros a generar estas rutas de aprendizaje.
         </p>
         <h3 class="my-3">Conclusiones</h3>
         <p>
-         En esta plática se logró dar a conocer uno de los problemas centrales en machine learning, el cual consiste en cómo poder medir y destruir una base de datos por relación entre diferentes variables. Las aplicaciones mencionadas de este trabajo van relacionadas directamente al mundo financiero y legal, en donde tenemos como ejemplos los modelos matemáticos que deciden aprobar o rechazar un crédito bancario. Otro ejemplo que se menciona es que puede ser usado para calcular qué tan probable es que un ex-convicto reincida por un crimen, siendo un dato importante en estos modelos las métricas que se utilizan para la exactitud de los modelos.
-         <br>
-         Algunos inconvenientes que surgieron dentro de esta investigación fueron encontrar sesgo para ciertos grupos de la base de datos, los cuales se resolvieron mediante auditaciones del modelo. Finalmente se estableció que no es suficiente eliminar solo una variable, ya que algunas variables del atributo están muy correlacionadas,por lo tanto se puede utilizar un atributo parcialmente, en el que solo se puede perder un porcentaje de exactitud para estar en los estándares requeridos.
+         La herramienta de BERT aún se utiliza en términos básicos, por lo que se puede especializar en algún contexto más específico, como por ejemplo para educación especial. Gracias a los módulos que tiene, se puede dar un contexto adicional para utilizar las etiquetas ya obtenidas como pre entrenamiento, preparando el modelo para nueva información y que pueda corregir mejor las etiquetas iniciales.
+         Como trabajo a futuro se menciona que debido a queel trabajo aún se encuentra en la etapa teórica, se pretende revisar y asegurar el nivel de confiabilidad de estas rutas de aprendizaje generadas por el modelo, y en su caso, qué tanto ajuste se necesita dar al modelo para su aplicación en diferentes ámbitos escolares, tales como, diferentes grados, aptitudes, etc.
         </p>
         <!--FIN CONTENIDO -->
 
@@ -145,9 +148,7 @@
          
         <h3 class="my-3">Enlaces relevantes</h3>
         <ul>
-         <li><a href="https://colab.research.google.com/drive/1YIkDnZGUbUrlAsfBW2oUsIXS-EbD8CW8?usp=sharing">E-Notebook de la charla.</a></li> 
-         <li><a href="https://blog.tensorflow.org/2019/03/introducing-tensorflow-privacy-learning.html"> Librería TensorFlow Privacy.</a></li> 
-         <li><a href="https://www.wiley.com/en-us/Elements+of+Information+Theory%2C+2nd+Edition-p-9780471241959"> Libro clásico sobre teoría de la información.</a></li> 
+         <li><a href="​https://kumu.io/ojessus/knotionoraculus">Knotion Oraculus</a></li> 
         </ul>
         
         <!-------------------------------------------- FIN ENLACES -------------------------------------->
@@ -987,22 +988,66 @@
                   </div>
                   </div>
                </div>
+            
+               <div class="col-md-4">
+                  <div class="card mb-2">
+                  <img class="card-img-top" src="../../../images/r6_2022.jpg"
+                     alt="Card image cap">
+                  <div class="card-body">
+                     <h4 class="card-title">Privacidad desde una perspectiva de Teoría de la Información                     </h4>
+                     <p class="card-text">En esta sesión el Dr. Mario Alberto Díaz Torres comentará sobre la privacidad  en la era digital moderna y la importancia de prestar gran atención a este aspecto, con el fin de evitar un uso inapropiado de la información.  </p>
+                     <a class="btn btn-primary"  href="../../../2022/reviews/session6/index.html">Leer</a>
+                  </div>
+                  </div>
+               </div>
+               
+            </div>
+            </div>
+            <!--19-->
+
+            <!--20-->
+         <div class="carousel-item">
+            <div class="row">
+   
+               <div class="col-md-4">
+                  <div class="card mb-2">
+                  <img class="card-img-top" src="../../../images/r7_2022.jpg"
+                     alt="Card image cap">
+                  <div class="card-body">
+                     <h4 class="card-title">Hacia una mejor evaluación del estrés oxidativo durante la metástasis                     </h4>
+                     <p class="card-text">En esta sesión el Lic. Arturo Elías Llumbet comentará sobre el proceso de caracterización mediante procesamiento de imágenes de microscopía confocal que se realiza antes  de  la realización de experimentos de magnetometría. Esta caracterización busca una mejor evaluación del estrés oxidativo durante la metástasis.</p>
+                     <a class="btn btn-primary"  href="../../../2022/reviews/session7/index.html">Leer</a>
+                  </div>
+                  </div>
+               </div>
                <!--
                <div class="col-md-4">
                   <div class="card mb-2">
-                  <img class="card-img-top" src="../../../images/r3_2022.jpg"
+                  <img class="card-img-top" src="../../../images/r5_2022.jpg"
                      alt="Card image cap">
                   <div class="card-body">
-                     <h4 class="card-title">Modelos de imputación equivalentes para el manejo de datos faltantes en bases de datos</h4>
-                     <p class="card-text">En esta sesión el Dr. Guillermo Santamaria Bonfil comentará sobre técnicas y modelos de imputación equivalentes para el manejo de datos faltantes en bases de datos. Además, presentará el uso de técnicas de aprendizaje automático en la imputación de valores faltantes de concentración en yacimientos geotérmicos.</p>
-                     <a class="btn btn-primary"  href="../../../2022/reviews/session3/index.html">Leer</a>
+                     <h4 class="card-title">La Matemática en la industria                     </h4>
+                     <p class="card-text">En esta sesión el Dr. Rafael Muñoz Sánchez comentará sobre temas relacionados con la matemática aplicada en la industria, partiendo de su experiencia dentro de la empresa Aleph5.</p>
+                     <a class="btn btn-primary"  href="../../../2022/reviews/session5/index.html">Leer</a>
+                  </div>
+                  </div>
+               </div>
+            
+               <div class="col-md-4">
+                  <div class="card mb-2">
+                  <img class="card-img-top" src="../../../images/r6_2022.jpg"
+                     alt="Card image cap">
+                  <div class="card-body">
+                     <h4 class="card-title">Privacidad desde una perspectiva de Teoría de la Información                     </h4>
+                     <p class="card-text">En esta sesión el Dr. Mario Alberto Díaz Torres comentará sobre la privacidad  en la era digital moderna y la importancia de prestar gran atención a este aspecto, con el fin de evitar un uso inapropiado de la información.  </p>
+                     <a class="btn btn-primary"  href="../../../2022/reviews/session6/index.html">Leer</a>
                   </div>
                   </div>
                </div>
                -->
             </div>
             </div>
-            <!--19-->
+            <!--20-->
         </div>
         <!--/.Slides-->
       </div>
